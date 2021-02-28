@@ -23,7 +23,7 @@ public class Practice01 {
 	}
 	
 	//오버로딩(Overloading) -- 한 클래스에서 같은 이름의 메소드를 여러개 만드는 것 
-	//매개변수의  1.개수 , 2.타입, 3.위치
+	//매개변수의  1.개수 , 2.타입, 3.위치(순서)
 	public static void printGugudan2(int dan) {
 		for(int i=1; i<10; i++) {
 			System.out.printf("%d * %d = %2d\n",dan,i,dan*i);
