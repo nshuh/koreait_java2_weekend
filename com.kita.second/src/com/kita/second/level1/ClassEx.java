@@ -1,11 +1,28 @@
 package com.kita.second.level1;
 
-public class ClassEx {
+public class ClassEx extends Object{
 //클래스의 구성은 아래와 같음	
 	//필드:만들고자 하는 부품의 상태, 속성
 	int field1;
 	String field2;
 	int[] field3;
+	
+	
+	int field4;
+	static int field5;
+	
+	void method4() {}
+	static void method5() {}
+	
+	static void methodTest() {
+//		this.field4 = 10;
+//		method4();
+		
+		field5 = 10;
+		method5();
+	}
+	
+	
 	
 	
 	//생성자:필드를 초기화 시킴, 메소드를 집어넣어 동작하게 함. 해당클래스의 이름과 같아야 함
@@ -14,7 +31,7 @@ public class ClassEx {
 		
 	}
 	public ClassEx(int field1){
-		this.field1 = field1;
+		this.field1 = field1+1;
 	}
 	
 	public ClassEx(int field1, String field2) {
@@ -22,7 +39,7 @@ public class ClassEx {
 		this.field2 = field2;
 	}
 	
-	public ClassEx(int field1, String field2, int[]) {
+	public ClassEx(int field1, String field2, int[] field3) {
 		this(field1, field2);
 		this.field3 = field3;
 	}

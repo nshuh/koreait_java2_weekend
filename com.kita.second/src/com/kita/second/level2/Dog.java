@@ -5,6 +5,7 @@ public class Dog extends Animal{ //상속자
 	public Dog(String name) {
 		super(name); //Animal(name);
 		this.cutiness = true;
+//		super.method; Animal클래스에서 private로 걸려있기 때문에 x
 	}
 	
 	
