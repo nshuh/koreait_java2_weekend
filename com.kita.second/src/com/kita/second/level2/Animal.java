@@ -1,6 +1,6 @@
 package com.kita.second.level2;
 
-public class Animal extends Object {
+public class Animal extends Object { 
 	String name;
 	int age;
 	private String type;

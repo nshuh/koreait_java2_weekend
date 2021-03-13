@@ -1,12 +1,19 @@
 package com.kita.second.level2;
 
 public class Movie extends Netflix {
+	public Movie(int maxChapter) {
+		super(maxChapter);
+	}
 	
-	//생성자
-	public Movie(String title) {
-		super(title);
-		
-		
+	@Override
+	boolean watch() {
+		++chapter;
+		if(chapter <= maxChapter) {
+			System.out.println("영화를 시청한다.");
+			 return true;
+		}
+		System.out.println("영화를 이미 다 시청했다.");
+		return false;
 	}
 
 }

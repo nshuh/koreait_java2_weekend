@@ -15,7 +15,7 @@ public class Test {
 		System.out.println("yourClac.num: "+ yourCalc);
 		
 		Calc.pi = 3.14;
-		
+			
 		Scanner sc = new Scanner(System.in);
 		ClassEx cl = new ClassEx();
 		int result = cl.sum(3,2,5,4,2,2,4,4,1);
