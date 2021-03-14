@@ -1,6 +1,6 @@
 package com.kita.second.level3;
 
-public abstract class Animal { //abstract : 추상적인....
+public abstract class Animal { //abstract : 추상적인... (추상클래스) 공통된 것을 뽑아내서 중복을 피하기 위함
 	String name;
 	int age;
 
@@ -9,9 +9,11 @@ public abstract class Animal { //abstract : 추상적인....
 		this.name = name;
 	}
 	
-	void cry(){
-		System.out.println("동물이 운다.");
+	void breathe() {
+		System.out.println("숨을 쉰다.");
 	}
+	
+	abstract void cry();
 	
 
 }
