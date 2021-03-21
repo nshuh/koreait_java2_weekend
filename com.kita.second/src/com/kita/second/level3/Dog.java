@@ -12,4 +12,9 @@ public class Dog extends Animal{
 		System.out.println("개가 운다.");
 	}
 
+
+	String getName() {
+		return name;
+	}
+
 }

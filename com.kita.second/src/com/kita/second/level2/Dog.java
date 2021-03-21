@@ -9,6 +9,8 @@ public class Dog extends Animal{ //상속자
 	}
 	
 	
+	
+	
 	// Overriding
 	@Override //오버라이드 할 때는 반드시 적어줘야함
 	void cry() {
