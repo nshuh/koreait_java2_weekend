@@ -10,7 +10,7 @@ public class Checker {
 		
 		for(int i=0; i<gameCnt; i++ ) {
 			for(int z=0; z<gameCnt; z++) {
-				if(ball.gameRNum(i) == myBall.getMyNum(z)){
+				if(ball.getRNum(i) == myBall.getMyNum(z)){
 					if(i==z) {
 						s++;
 					} else {
@@ -20,7 +20,7 @@ public class Checker {
 				}
 			}
 		}
-		System.out.printf("s: %d, b: %d, o: d%", s, b, (gameCnt));
+		System.out.printf("s: %d, b: %d, o: d%", s, b, (gameCnt-s-b));
 		
 //		boolean result = (s != gameCnt);
 //		return result;
